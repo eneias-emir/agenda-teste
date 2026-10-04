@@ -1,0 +1,17 @@
+# Copie para o projeto do futuro SaaS e adapte build/porta.
+name: ns-saas
+services:
+  web:
+    build: .
+    expose:
+      - "3000"
+    networks:
+      default:
+      proxy:
+        aliases:
+          - ns-web
+    restart: unless-stopped
+networks:
+  proxy:
+    external: true
+    name: emitech-proxy

@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #f3f6fb;
+    color: #192b42;
+    font-family: system-ui, -apple-system, sans-serif
+}
+
+main {
+    max-width: 960px;
+    margin: 48px auto;
+    padding: 0 24px
+}
+
+header {
+    margin-bottom: 28px
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #426b9b
+}
+
+h1 {
+    font-size: 40px;
+    margin: 12px 0 6px;
+    letter-spacing: -1px
+}
+
+header p,
+footer,
+.empty {
+    color: #66758a
+}
+
+h2 {
+    font-size: 19px;
+    margin: 0 0 22px
+}
+
+.card {
+    background: white;
+    border: 1px solid #dfe6ef;
+    border-radius: 16px;
+    padding: 28px;
+    margin: 20px 0;
+    box-shadow: 0 4px 16px #192b4205
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+label {
+    display: grid;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600
+}
+
+input {
+    font: inherit;
+    border: 1px solid #bdcadb;
+    border-radius: 8px;
+    padding: 12px;
+    min-width: 0
+}
+
+input:focus {
+    outline: 2px solid #8ab4ed;
+    outline-offset: 2px
+}
+
+button {
+    border: 0;
+    border-radius: 8px;
+    padding: 11px 16px;
+    background: #245bbb;
+    color: white;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer
+}
+
+button:disabled {
+    opacity: .5;
+    cursor: wait
+}
+
+.secondary {
+    background: #edf2f9;
+    color: #294b79
+}
+
+.danger {
+    background: #fff0f0;
+    color: #b52937
+}
+
+.actions {
+    grid-column: 1/-1;
+    display: flex;
+    gap: 10px
+}
+
+.list-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px
+}
+
+.list-heading h2 {
+    margin: 0
+}
+
+.count {
+    font-size: 13px;
+    background: #edf2f9;
+    border-radius: 20px;
+    padding: 3px 9px;
+    margin-left: 6px
+}
+
+.table-wrap {
+    overflow: auto
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left
+}
+
+th {
+    font-size: 12px;
+    color: #66758a
+}
+
+th,
+td {
+    padding: 16px 8px;
+    border-bottom: 1px solid #edf0f5
+}
+
+td {
+    overflow-wrap: anywhere
+}
+
+.row-actions {
+    display: flex;
+    gap: 8px
+}
+
+.error,
+.success {
+    padding: 14px;
+    border-radius: 8px
+}
+
+.error {
+    background: #fff0f0;
+    color: #9d2433
+}
+
+.success {
+    background: #e8f6ee;
+    color: #256241
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin: 28px 0
+}
+
+@media(max-width:600px) {
+    main {
+        margin: 28px auto;
+        padding: 0 16px
+    }
+
+    .card {
+        padding: 20px
+    }
+
+    form {
+        grid-template-columns: 1fr
+    }
+
+    h1 {
+        font-size: 32px
+    }
+
+    .row-actions {
+        flex-direction: column
+    }
+
+    th,
+    td {
+        padding: 12px 5px
+    }
+}
